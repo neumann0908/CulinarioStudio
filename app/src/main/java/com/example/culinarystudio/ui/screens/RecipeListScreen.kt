@@ -39,8 +39,7 @@ fun RecipeListScreen(
             is UiState.Success -> {
                 LazyColumn(verticalArrangement = Arrangement.spacedBy(12.dp)) {
                     items(s.recipes) { recipe ->
-                        RecipeItem(recipe, onRecipeClick = { onRecipeClick(recipe) })
-                        
+                        RecipeItem(recipe = recipe, onClick = { onRecipeClick(recipe) })
                     }
                 }
             }
