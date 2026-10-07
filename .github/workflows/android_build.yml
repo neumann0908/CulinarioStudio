@@ -20,8 +20,11 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
-    - name: Setup Gradle
-      uses: gradle/actions/setup-gradle@v3
+    - name: Install Gradle & Build Wrapper
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y gradle
+        gradle wrapper
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
