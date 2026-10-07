@@ -1,5 +1,6 @@
 package com.example.culinarystudio.ui.screens
 
+import androidx.compose.ui.unit.dp
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
